@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <button>Hello</button>
+        <button class="js-button">World!</button> <!-- start with js- to mark it's being used by js -->
+        <script>
+            document.querySelector('button'); // Gets the first element on the page
+            document.querySelector('button')
+                .innerHTML = 'Changed';
+            document.querySelector('.js-button'); // dot = class selector
+
+            const buttonElem = document.querySelector('.js-button');
+            /*
+            console.log(document.title);
+            document.title = 'Changed';
+            console.log(document.title);
+            console.log(document.body);
+            document.body.innerHTML = 'hello';
+            document.title = 'Good job!';
+            document.body.innerHTML = '<button>Good job!</button>';
+            */
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+
+
+        <script>           
+            const product = {
+                name: 'socks',
+                price: 1090
+            };
+            console.log(product);
+            console.log(product.price);
+            console.log(product.name);
+            console.log(product['name']);
+
+            const product2 = {
+                name: 'shirt',
+                ['delivery-time']: '1 day',
+                'dollars': 2,
+                rating: {
+                    stars: 4.5,
+                    count: 87
+                },
+                fun: function foo() {
+                    console.log('Function inside object');
+                }
+            };
+
+            console.log(product2.rating.count);
+            product2.fun();
+            console.log(JSON.stringify(product2));
+            const jsonString = JSON.stringify(product2);
+            console.log(JSON.parse(jsonString));
+        </script>
+    </body>
+</html>
